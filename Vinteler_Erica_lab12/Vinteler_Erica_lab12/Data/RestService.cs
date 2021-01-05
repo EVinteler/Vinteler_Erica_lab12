@@ -5,6 +5,7 @@ using System.Text;
 using Newtonsoft.Json;
 
 using Vinteler_Erica_lab12.Models;
+using System.Net.Http;
 
 namespace Vinteler_Erica_lab12.Data
 {
@@ -13,7 +14,7 @@ namespace Vinteler_Erica_lab12.Data
         HttpClient client;
 
         //se va modifica ulterior cu ip-ul si portul corespunzator
-        string RestUrl = "https://192.169.0.8:45455/api/shoplists/{0}";
+        string RestUrl = "https://192.168.1.136:45455/api/shoplists/{0}";
         public List<ShopList> Items { get; private set; }
         public RestService()
         {

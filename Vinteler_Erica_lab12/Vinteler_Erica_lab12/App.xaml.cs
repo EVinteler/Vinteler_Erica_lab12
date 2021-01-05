@@ -11,10 +11,10 @@ namespace Vinteler_Erica_lab12
         public static ShoppingListDatabase Database { get; private set; }
         public App()
         {
+            InitializeComponent();
+            MainPage = new MainPage();
             Database = new ShoppingListDatabase(new RestService());
             MainPage = new NavigationPage(new ListEntryPage());
-            //InitializeComponent();
-            //MainPage = new MainPage();
         }
 
         protected override void OnStart()

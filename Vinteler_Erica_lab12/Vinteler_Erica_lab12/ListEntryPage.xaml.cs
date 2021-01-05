@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Vinteler_Erica_lab12.Models;
 
 namespace Vinteler_Erica_lab12
 {
